@@ -26,6 +26,8 @@ Siehe [[STRUKTUR]] für die genauen Programmdaten.
 - [[vortraege/input-bewerbung-mit-ki-agent]] – Input (Dienstag Vormittag, 20 Min.)
 - [[vortraege/workshop-llm-als-agenten]] – Workshop (Dienstag Nachmittag, 2×90 Min.)
 
+**Präsentationen (reveal.js):** [vortraege/index.html](vortraege/index.html)
+
 ### Quellen und Hintergrund
 
 - [[quellen/IT-Sicherheit von KI-LLMs]] – Quellen zur These *„LLMs sind prinzipiell nicht absicherbar“*
