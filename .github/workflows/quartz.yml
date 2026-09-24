@@ -31,10 +31,10 @@ jobs:
           node-version: 20
 
       - name: Install Quartz globally
-        run: npm install -g quartz
+        run: npm install -g quartz@latest
 
       - name: Build Quartz site
-        run: quartz build --output-dir _quartz
+        run: npx quartz build --output-dir _quartz
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
