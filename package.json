@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "quartz:build": "npx @quartz/sync build --output-dir _quartz",
-    "quartz:serve": "npx @quartz/sync serve --port 3000"
+    "quartz:build": "npx quartz build --output-dir _quartz",
+    "quartz:serve": "npx quartz serve --port 3000"
   },
   "devDependencies": {
-    "@quartz/sync": "^0.4.0"
+    "quartz": "^4.0.0"
   }
 }

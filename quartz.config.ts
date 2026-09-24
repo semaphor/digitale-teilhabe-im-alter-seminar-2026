@@ -1,4 +1,4 @@
-import { QuartzConfig } from "./node_modules/@quartz/sync/cfg"
+import { QuartzConfig } from "quartz/config"
 
 export const cfg: QuartzConfig = {
   configuration: {
@@ -7,7 +7,7 @@ export const cfg: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     baseUrl: "/digitale-teilhabe-im-alter-seminar-2026/",
-    ignorePatterns: ["vortraege/_site", "vortraege/node_modules", "vortraege/package*.json", ".git", "quartz.config.ts"],
+    ignorePatterns: ["vortraege/_site", "vortraege/node_modules", "vortraege/package*.json", ".git"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
