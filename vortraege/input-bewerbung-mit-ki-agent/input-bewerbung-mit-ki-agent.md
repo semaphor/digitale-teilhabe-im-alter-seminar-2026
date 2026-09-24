@@ -1,7 +1,7 @@
 ---
 title: Bewerbungen Schreiben mit Hilfe eines KI-Agenten
 theme: white
-trigger_action_run: jetzt
+trigger_action_run: now
 ---
 
 # Bewerbungen Schreiben mit Hilfe eines KI-Agenten
