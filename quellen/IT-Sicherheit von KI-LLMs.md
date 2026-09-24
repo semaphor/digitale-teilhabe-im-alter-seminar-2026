@@ -25,16 +25,7 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 - **Autor:** Apostol Vassilev (NIST, Information Technology Laboratory)
 - **Veröffentlichung:** IEEE Security & Privacy, vol. 24, no. 3 (Mai/Juni 2026), S. 52–58
 - **DOI:** [10.1109/MSEC.2026.3678214](https://doi.org/10.1109/MSEC.2026.3678214)
-
-**Links (Volltext):**
-   Quelle | Link |
- |---|---|
- | PMC (Open Access) | https://pmc.ncbi.nlm.nih.gov/articles/PMC13533067/ |
- | IEEE Xplore | https://ieeexplore.ieee.org/iel8/8013/11519081/11475847.pdf |
- | NIST-PDF | https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=960858 |
- | NIST CSRC | https://csrc.nist.gov/pubs/journal/2026/05/robust-ai-security-and-alignment-a-sisyphean-endea/final |
- | NIST-Publikationsseite | https://www.nist.gov/publications/robust-ai-security-and-alignment-sisyphean-endeavor |
-
+* *Links (Volltext): PMC (Open Access), https://pmc.ncbi.nlm.nih.gov/articles/PMC13533067/
 - **Kernaussage:** Das Paper etabliert **informationstheoretische Grenzen** für die Robustheit von KI-Sicherheit und KI-Alignment (Gödel-Argumentation) und leitet weitere Resultate zu kognitiven Reasoning-Grenzen von KI-Systemen ab. Titelgebend: Sicherheit als endloser Prozess („Sisyphus-Arbeit"), kein erreichbarer Endzustand.
 
 **Zitation:**
@@ -43,8 +34,6 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 ## 3) OWASP Top 10 for LLM Applications
 
 - **Aktuelle Version (2026):** https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
-- **Übersichtsseite / Archiv:** https://genai.owasp.org/llm-top-10/
-- **Offizielles GitHub-Repository:** https://github.com/GenAI-Security-Project/GenAI-LLM-Top10
 - **OWASP-Projektseite:** https://owasp.org/projects/top-10-for-large-language-model-applications
 - **Kernaussage:** Liste der kritischsten Sicherheitsrisiken für LLM-Anwendungen; **Prompt Injection** belegt Platz 1 — die praktische Seite dessen, was Vassilev mathematisch beweist. Risiken sind u. a. auf NIST, MITRE ATLAS und CWE gemappt.
 
