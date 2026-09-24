@@ -31,7 +31,7 @@ jobs:
           node-version: 18
 
       - name: Clone Quartz repo
-        run: git clone https://github.com/QuartzWiki/quartz.git
+        run: git clone https://token:${{ secrets.GITHUB_TOKEN }}@github.com/quartz-wiki/quartz.git
 
       - name: Install dependencies
         run: |
