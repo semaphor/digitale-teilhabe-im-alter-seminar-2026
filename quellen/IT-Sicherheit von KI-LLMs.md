@@ -15,14 +15,7 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 
 - **Autor:** Christian Schneider
 - **Veranstaltung:** German OWASP Day 2026
-- **Zusammenfassung:**
-  > Eine E-Mail liegt im Posteingang. Niemand öffnet sie, niemand klickt. Tage später fragt jemand seinen KI-Assistenten nach den letzten Mails — und der Agent schickt still interne Daten an einen fremden Server. So lief **EchoLeak** gegen Microsoft Copilot (CVE-2025-32711, CVSS 9.3): kein Exploit-Code, keine kaputte Authentifizierung. Jede Komponente hatte ihr Security-Review bestanden. Der Angriff lebte im Pfad dazwischen.
-  >
-  > Wer agentenbasierte Systeme baut, kennt das Muster: Wir prüfen Komponenten einzeln, Angreifer denken in Ketten. Sobald ein Agent Daten abruft, Aufgaben plant, Tools aufruft, sich Dinge merkt und mit anderen Agenten redet, entstehen Angriffspfade quer über Vertrauensgrenzen, die kein Per-Komponenten-Review sichtbar macht. Gerade im Kontext von **Agentic AI** werden dabei die Grenzen klassischer STRIDE-Analysen sichtbar, weil sich Risiken oft erst entlang von Daten-, Entscheidungs- und Tool-Ketten über mehrere Komponenten hinweg entfalten.
-  >
-  > Der Vortrag stellt die **Fünf-Zonen-Brille** vor (Eingabe, Planung, Tool-Ausführung, Speicher, Agent-zu-Agent-Kommunikation) als Methode, um systematisch Schwachstellen zu identifizieren. Anhand von drei realen Architekturbeispielen (RAG-Pipeline-Poisoning, Missbrauch einer MCP-Tool-Chain, Multi-Agent-Kaskade) werden Attack Trees erstellt und strukturelle Kontrollen (Tool-Scoping pro Aufgabe, Egress-Inspektion, Credential-Trennung) von prompt-basierten Kontrollen unterschieden.
-  >
-  > Am Ende steht eine wiederholbare Routine für Agentic-AI-Systeme: Zonen kartieren, Pfade ablaufen, einen Baum bauen, Single Points of Failure finden, Kontrollen anhängen und validieren.
+- **Kernaussage:** Per-Komponenten-Security-Reviews reichen bei Agentic AI nicht aus, da Angriffspfade über Vertrauensgrenzen hinweg entstehen. Der Vortrag stellt die **Fünf-Zonen-Brille** (Eingabe, Planung, Tool-Ausführung, Speicher, Agent-zu-Agent-Kommunikation) als systematische Methode vor, inkl. realer Beispiele wie **EchoLeak (CVE-2025-32711)**.
 - **Lizenz:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## 2) NIST-Meldung (Pressemitteilung)
