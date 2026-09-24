@@ -1,6 +1,8 @@
 Meine Notizen zur Strukturierung des Inhalts
-
-
+Siehe auch [[Wilde Materialsammlung]].
+Quellen:
+* [[IT-Sicherheit von KI-LLMs]]
+* [[Digitale Unabhängigkeit (Souveränität)]]
 ## Vorstellung Simon Lüke
 ...
 
