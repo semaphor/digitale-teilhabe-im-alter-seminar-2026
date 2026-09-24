@@ -30,25 +30,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Clone Quartz repo
-        run: git clone https://github.com/jackyzha/quartz.git || git clone https://token:${{ secrets.GITHUB_TOKEN }}@github.com/jackyzha/quartz.git
-
-      - name: Install dependencies
-        run: |
-          cd quartz
-          npm install
-          cd ..
-
-      - name: Copy Quartz config if missing
-        run: |
-          if [ ! -f quartz.config.ts ]; then
-            cp quartz/quartz.config.ts .
-          fi
+      - name: Install Quartz
+        run: npm install @quartz-community/quartz
 
       - name: Build Quartz site
-        run: |
-          cd quartz
-          npx quartz build --output-dir ../_quartz
+        run: npx quartz build --output-dir _quartz
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
