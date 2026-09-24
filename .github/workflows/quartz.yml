@@ -30,11 +30,19 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Quartz via npm
-        run: npm install quartz
+      - name: Clone Quartz repo
+        run: git clone https://github.com/QuartzWiki/quartz.git
+
+      - name: Install dependencies
+        run: |
+          cd quartz
+          npm install
+          cd ..
 
       - name: Build Quartz site
-        run: npx quartz build --output-dir _quartz
+        run: |
+          cd quartz
+          npx quartz build --output-dir ../_quartz
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
