@@ -1,0 +1,7 @@
+/* Shared layout overrides for all three DI.DAY presentations.
+   Edit here — every talk includes this file, so changes apply everywhere. */
+
+.reveal h1,
+.reveal h2 {
+  text-transform: none;
+}

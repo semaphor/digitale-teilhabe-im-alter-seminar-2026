@@ -1,0 +1,4 @@
+node_modules/
+
+# reveal-md build output
+vortraege/_site/
