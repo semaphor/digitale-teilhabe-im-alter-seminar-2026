@@ -34,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Build Quartz site
-        run: npx quartz build --output-dir _quartz
+        run: npx @quartz/sync build --output-dir _quartz
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
