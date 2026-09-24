@@ -30,14 +30,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Quartz CLI
-        run: npm install -g @quartz/sync
+      - name: Install Quartz globally
+        run: npm install -g quartz
 
       - name: Build Quartz site
-        run: npx quartz build --output-dir _quartz
+        run: quartz build --output-dir _quartz
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
