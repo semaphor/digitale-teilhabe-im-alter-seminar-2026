@@ -15,7 +15,7 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 
 - **Autor:** Christian Schneider
 - **Veranstaltung:** German OWASP Day 2026
-- **Kernaussage:** Praktische Demonstration, wie selbst scheinbar sichere KI-Agenten mit "vier grünen Häkchen" (z. B. Input-Validierung, Guardrails, Sandboxing, Monitoring) durch gezielte Angriffe umgangen werden können. Fokus auf **Threat Modeling** als Methode, um Schwachstellen in KI-Systemen systematisch zu identifizieren.
+- **Beschreibung:** Vortrag zu Threat Modeling für KI-Agenten (siehe Aufzeichnung).
 
 ## 2) NIST-Meldung (Pressemitteilung)
 
