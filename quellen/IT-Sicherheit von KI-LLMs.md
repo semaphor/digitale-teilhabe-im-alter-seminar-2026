@@ -9,7 +9,15 @@ stand: 2026-09-24
 
 Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absicherbar"** — nicht der Kern des Seminar-Inputs, sondern Stützungsbelege.
 
-## 1) NIST-Meldung (Pressemitteilung)
+## 1) Vortragsaufzeichnung: Threat Modeling für KI-Agenten
+
+**Titel:** [Vier grüne Häkchen, trotzdem gehackt: Threat Modeling für KI-Agenten](https://media.ccc.de/v/god2026-110764-vier-grune-hakchen-trotzd)
+
+- **Autor:** Christian Schneider
+- **Veranstaltung:** German OWASP Day 2026
+- **Kernaussage:** Praktische Demonstration, wie selbst scheinbar sichere KI-Agenten mit "vier grünen Häkchen" (z. B. Input-Validierung, Guardrails, Sandboxing, Monitoring) durch gezielte Angriffe umgangen werden können. Fokus auf **Threat Modeling** als Methode, um Schwachstellen in KI-Systemen systematisch zu identifizieren.
+
+## 2) NIST-Meldung (Pressemitteilung)
 
 **Titel:** [NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems](https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update)
 
@@ -18,7 +26,7 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 - **Kernaussage:** Apostol Vassilev (Senior Scientist, NIST) legt einen mathematischen Beweis vor: **Keine feste (endliche) Menge von Guardrails ist universell robust gegen adaptive adversarialische Prompts.** Der Beweis überträgt die Logik von Kurt Gödels Unvollständigkeitssätzen (1931) auf KI-Systeme — für jede feste Regelmenge existieren Prompts, die sie umgehen; man muss sie nur finden.
 - **Praktische Konsequenz laut NIST:** Abkehr vom „One-and-Done"-Sicherheitsmodell; Übergang zu **Continuous-Monitor-and-Update** mit drei Elementen: (1) kontinuierliches Red Teaming, (2) fortlaufende Härtung der Guardrails, (3) operative Resilienz. Der Beweis liefert Angreifern kein Rezept — Ziel ist, dass die Kosten der Exploit-Suche die Angreiferressourcen übersteigen.
 
-## 2) Paper (Primärquelle)
+## 3) Paper (Primärquelle)
 
 **Titel:** *Robust AI Security and Alignment: A Sisyphean Endeavor?*
 
@@ -31,7 +39,7 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 **Zitation:**
 > Vassilev, A. (2026). Robust AI Security and Alignment: A Sisyphean Endeavor? *IEEE Security & Privacy*, 24(3), 52–58. https://doi.org/10.1109/MSEC.2026.3678214
 
-## 3) OWASP Top 10 for LLM Applications
+## 4) OWASP Top 10 for LLM Applications
 
 - **Aktuelle Version (2026):** https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 - **OWASP-Projektseite:** https://owasp.org/projects/top-10-for-large-language-model-applications
@@ -42,8 +50,9 @@ Quellen zur Stützung der Randbemerkung **„LLMs sind prinzipiell nicht absiche
 
 ---
 
-## Zusammenhang der drei Quellen
+## Zusammenhang der Quellen
 
+- **Christian Schneider (Vortrag):** praktische Demonstration von Schwachstellen in KI-Agenten trotz scheinbarer Absicherung ("vier grüne Häkchen").
 - **Vassilev (Paper):** mathematischer Beweis — keine endliche Guardrail-Menge ist universell robust (Gödel-Logik, informationstheoretische Grenzen).
 - **NIST-Meldung:** offizielle Einordnung und praktische Konsequenz (Continuous-Monitor-and-Update-Modell).
 - **OWASP LLM Top 10:** empirische/praktische Bestätigung — Prompt Injection als Risiko Nr. 1.
