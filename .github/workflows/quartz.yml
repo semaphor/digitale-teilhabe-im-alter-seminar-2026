@@ -32,7 +32,7 @@ jobs:
 
       - name: Install Quartz via GitHub
         run: |
-          git clone https://token:${{ secrets.GITHUB_TOKEN }}@github.com/JackyZha/quartz.git
+          git clone https://token:${{ secrets.GITHUB_TOKEN }}@github.com/jackyzha/quartz.git
           cd quartz
           npm install
           cd ..
