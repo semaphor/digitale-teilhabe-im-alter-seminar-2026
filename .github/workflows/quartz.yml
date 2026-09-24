@@ -30,14 +30,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Quartz via GitHub
-        run: |
-          git clone https://token:${{ secrets.GITHUB_TOKEN }}@github.com/jackyzha/quartz
-          cd quartz
-          npm install
-          cd ..
-          cp -r quartz/* .
-          rm -rf quartz
+      - name: Install Quartz via npm
+        run: npm install quartz
 
       - name: Build Quartz site
         run: npx quartz build --output-dir _quartz
