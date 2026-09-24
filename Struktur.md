@@ -6,11 +6,11 @@ Quellen:
 ## Vorstellung Simon Lüke
 ...
 
-## Schritt für Schritt digital unabhängiger – DI.DAY, Technik und politische Hintergründe
+## [[schritt-fuer-schritt-digital-unabhaengiger|Vortrag: Schritt für Schrit digital unabhängiger]]
 ...
 
 
-## Bewerbungen Schreiben mit Hilfe eines KI-Agenten
+## [[input-bewerbung-mit-ki-agent|Input: Bewerbungen schreiben mit KI-Agent]]
 
 ### Vorworte, Haltung zu KI und LLM
 
@@ -19,3 +19,5 @@ Quellen:
 
 * Mitarbeiter
 * Ungläubiger Thomas
+
+## [[workshop-llm-als-agenten|Workshop: LLMs als Agenten?]]
