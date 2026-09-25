@@ -5,6 +5,7 @@
     "watch": "reveal-md --css shared/theme.css --template shared/template.html -w"
   },
   "devDependencies": {
-    "reveal-md": "^6.1.1"
+    "reveal-md": "^6.1.1",
+    "puppeteer": "^23.9.0"
   }
 }

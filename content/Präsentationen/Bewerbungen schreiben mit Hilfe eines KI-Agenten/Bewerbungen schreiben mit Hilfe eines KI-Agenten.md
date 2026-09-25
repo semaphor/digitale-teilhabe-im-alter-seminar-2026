@@ -13,7 +13,16 @@ Diese Folien sind eine Web-Präsentation mit [reveal.js](https://revealjs.com).
 - **←** – vorherige Folie
 - **F** – Vollbildmodus
 - **Esc** / **O** – Übersicht aller Folien
+- **S** – Sprechernotizen (nur für Vortragende)
 - **?** – alle Tastenkürzel anzeigen
+
+---
+
+## Als PDF
+
+[Druckansicht](?print-pdf) · [Druckansicht mit Notizen](?print-pdf&showNotes=true)
+
+Im Browser mit Strg+P (Cmd+P auf dem Mac) drucken, Ziel „Als PDF speichern", Hintergrundgrafiken aktivieren.
 
 ---
 

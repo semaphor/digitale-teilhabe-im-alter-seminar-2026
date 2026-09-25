@@ -54,6 +54,10 @@ jobs:
             # folder, not the invocation cwd, so the shared logos/QR code
             # never get copied by the build itself - copy them in manually.
             cp shared/logos/*.png shared/qr-code.svg "_site/$slug/"
+            # two PDF exports (with/without speaker notes) via reveal.js's
+            # own print-pdf mode - reveal-md's --print CLI option can't add
+            # showNotes, so this drives Puppeteer directly instead
+            node print-pdf.mjs "$slug"
           done
 
       - name: Publish slide decks into the site

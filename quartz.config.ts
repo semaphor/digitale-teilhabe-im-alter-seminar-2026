@@ -15,6 +15,7 @@ const config: QuartzConfig = {
       "Präsentationen/node_modules",
       "Präsentationen/package.json",
       "Präsentationen/package-lock.json",
+      "Präsentationen/print-pdf.mjs",
       // reveal-md's own template, not vault content; kept as a build tool
       // config file referenced by --template in the workflow
       "Präsentationen/shared/template.html",
