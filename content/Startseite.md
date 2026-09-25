@@ -1,5 +1,6 @@
 ---
 title: Digitale Teilhabe im Alter – Seminar 2026
+permalink: index
 ---
 
 # Digitale Teilhabe im Alter – Seminar 2026
@@ -26,11 +27,11 @@ Siehe [[STRUKTUR]] für die genauen Programmdaten.
 
 ### Vorträge und Workshops
 
-- [[vortraege/schritt-fuer-schritt-digital-unabhaengiger]] – Vortrag (Dienstag Vormittag, 45 Min.)
-- [[vortraege/input-bewerbung-mit-ki-agent]] – Input (Dienstag Vormittag, 20 Min.)
-- [[vortraege/workshop-llm-als-agenten]] – Workshop (Dienstag Nachmittag, 2×90 Min.)
+- [[Schritt für Schritt digital unabhängiger]] – Vortrag (Dienstag Vormittag, 45 Min.)
+- [[Bewerbungen schreiben mit Hilfe eines KI-Agenten]] – Input (Dienstag Vormittag, 20 Min.)
+- [[Generative Sprachmodelle als eigenständige Agenten?]] – Workshop (Dienstag Nachmittag, 2×90 Min.)
 
-**Präsentationen (reveal.js):** [vortraege/index.html](vortraege/index.html)
+Übersicht mit Vortragsfolien: [[Präsentationen]]
 
 ### Quellen und Hintergrund
 

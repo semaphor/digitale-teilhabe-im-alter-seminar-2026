@@ -2,13 +2,7 @@
   "name": "seminar-dta",
   "private": true,
   "scripts": {
-    "watch:vortrag": "reveal-md schritt-fuer-schritt-digital-unabhaengiger/schritt-fuer-schritt-digital-unabhaengiger.md --css shared/theme.css --template shared/template.html -w",
-    "watch:input": "reveal-md input-bewerbung-mit-ki-agent/input-bewerbung-mit-ki-agent.md --css shared/theme.css --template shared/template.html -w",
-    "watch:workshop": "reveal-md workshop-llm-als-agenten/workshop-llm-als-agenten.md --css shared/theme.css --template shared/template.html -w",
-    "build:vortrag": "reveal-md schritt-fuer-schritt-digital-unabhaengiger/schritt-fuer-schritt-digital-unabhaengiger.md --css shared/theme.css --template shared/template.html --static _site/schritt-fuer-schritt-digital-unabhaengiger",
-    "build:input": "reveal-md input-bewerbung-mit-ki-agent/input-bewerbung-mit-ki-agent.md --css shared/theme.css --template shared/template.html --static _site/input-bewerbung-mit-ki-agent",
-    "build:workshop": "reveal-md workshop-llm-als-agenten/workshop-llm-als-agenten.md --css shared/theme.css --template shared/template.html --static _site/workshop-llm-als-agenten",
-    "build": "npm run build:vortrag && npm run build:input && npm run build:workshop"
+    "watch": "reveal-md --css shared/theme.css --template shared/template.html -w"
   },
   "devDependencies": {
     "reveal-md": "^6.1.1"

@@ -35,20 +35,29 @@ jobs:
         run: npx quartz build
 
       - name: Build reveal.js slide decks
-        working-directory: content/vortraege
+        working-directory: content/Präsentationen
         run: |
           npm ci
-          npm run build
-          # reveal-md resolves image paths relative to each deck's own folder,
-          # not the invocation cwd, so the shared logos/QR code never get
-          # copied by the build itself - copy them in manually per deck.
-          for deck in _site/*/; do
-            mkdir -p "$deck/shared"
-            cp -r shared/* "$deck/shared/"
+          # Every subfolder whose .md matches its own folder name is a slide
+          # deck (Obsidian folder-note convention) - build it generically so
+          # renaming/adding/removing a talk in Obsidian never breaks this step.
+          for dir in */; do
+            name="${dir%/}"
+            [ "$name" = "shared" ] && continue
+            md="$dir$name.md"
+            [ -f "$md" ] || continue
+            # match Quartz's own sluggify() so the deck lands at the same
+            # URL a normal content page with this folder name would get
+            slug=$(printf '%s' "$name" | sed -e 's/ /-/g' -e 's/&/-and-/g' -e 's/%/-percent/g' -e 's/?//g' -e 's/#//g')
+            npx reveal-md "$md" --css shared/theme.css --template shared/template.html --static "_site/$slug"
+            # reveal-md resolves image paths relative to each deck's own
+            # folder, not the invocation cwd, so the shared logos/QR code
+            # never get copied by the build itself - copy them in manually.
+            cp shared/logos/*.png shared/qr-code.svg "_site/$slug/"
           done
 
       - name: Publish slide decks into the site
-        run: cp -r content/vortraege/_site/* public/vortraege/
+        run: cp -r content/Präsentationen/_site/* public/Präsentationen/
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v5
