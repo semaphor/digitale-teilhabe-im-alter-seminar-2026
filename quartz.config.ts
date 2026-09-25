@@ -18,6 +18,8 @@ const config: QuartzConfig = {
       // reveal-md's own template, not vault content; kept as a build tool
       // config file referenced by --template in the workflow
       "Präsentationen/shared/template.html",
+      // internal editorial checklist, not meant for publication
+      "Präsentationen/Check.md",
       "private",
       "templates",
       ".obsidian",

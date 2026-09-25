@@ -1,7 +1,20 @@
 ---
 title: Bewerbungen Schreiben mit Hilfe eines KI-Agenten
 theme: white
-trigger_action_run: now
+---
+
+## Es geht gleich los...
+
+Diese Folien sind eine Web-Präsentation mit [reveal.js](https://revealjs.com).
+
+**Bedienung:**
+
+- **→ / Leertaste** – nächste Folie
+- **←** – vorherige Folie
+- **F** – Vollbildmodus
+- **Esc** / **O** – Übersicht aller Folien
+- **?** – alle Tastenkürzel anzeigen
+
 ---
 
 # Bewerbungen schreiben mit Hilfe eines KI-Agenten
@@ -49,12 +62,11 @@ Kontakt: [https://simon.lueke.space/](https://simon.lueke.space/)
 ## Quellen:
 
 - 
-# Trigger
-# Trigger 2
-# Trigger 3
-# Trigger 4
-# Trigger 5
-# Trigger 6
-# Trigger 7
-# Trigger 8
-# Trigger 9
+
+---
+
+## Rechte
+
+- Logos: Landeszentrale für politische Bildung Baden-Württemberg (LpB), Netzwerk für Senior-Internet-Initiativen Baden-Württemberg e.V. (SII), Universität Ulm / ZAWiW – Rechte jeweils bei der genannten Organisation.
+- Bildmaterial: Quellen und Rechte sind jeweils auf der Folie angegeben.
+- Präsentation und Text dieser Website: © Simon Lüke, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) – ausgenommen die oben genannten Logos und Bildquellen.

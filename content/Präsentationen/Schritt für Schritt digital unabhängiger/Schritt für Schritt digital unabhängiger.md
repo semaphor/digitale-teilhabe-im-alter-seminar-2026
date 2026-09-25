@@ -3,6 +3,20 @@ title: Schritt für Schritt digital unabhängiger
 theme: white
 ---
 
+## Es geht gleich los...
+
+Diese Folien sind eine Web-Präsentation mit [reveal.js](https://revealjs.com).
+
+**Bedienung:**
+
+- **→ / Leertaste** – nächste Folie
+- **←** – vorherige Folie
+- **F** – Vollbildmodus
+- **Esc** / **O** – Übersicht aller Folien
+- **?** – alle Tastenkürzel anzeigen
+
+---
+
 # Schritt für Schritt digital unabhängiger
 
 **DI.DAY, Technik und politische Hintergründe**
@@ -48,3 +62,11 @@ Kontakt: [simon.lueke.space](https://simon.lueke.space/)
 ## Quellen:
 
 - 
+
+---
+
+## Rechte
+
+- Logos: Landeszentrale für politische Bildung Baden-Württemberg (LpB), Netzwerk für Senior-Internet-Initiativen Baden-Württemberg e.V. (SII), Universität Ulm / ZAWiW – Rechte jeweils bei der genannten Organisation.
+- Bildmaterial: Quellen und Rechte sind jeweils auf der Folie angegeben.
+- Präsentation und Text dieser Website: © Simon Lüke, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) – ausgenommen die oben genannten Logos und Bildquellen.
