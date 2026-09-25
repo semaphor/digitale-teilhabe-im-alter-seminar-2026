@@ -8,7 +8,7 @@ title: Vorträge und Workshops
 
 Offenes Seminar · 12.–14. Oktober 2026 · Haus auf der Alb, Bad Urach
 
-![LpB](vortraege/shared/logos/lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](vortraege/shared/logos/sii.png) ![Universität Ulm / ZAWiW](vortraege/shared/logos/uulm-zawiw.png)
+![LpB](lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](sii.png) ![Universität Ulm / ZAWiW](uulm-zawiw.png)
 
 ## Präsentationen
 

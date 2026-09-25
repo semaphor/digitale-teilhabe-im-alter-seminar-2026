@@ -4,13 +4,13 @@ theme: white
 trigger_action_run: now
 ---
 
-# Bewerbungen Schreiben mit Hilfe eines KI-Agenten
+# Bewerbungen schreiben mit Hilfe eines KI-Agenten
 
 **Input**
 
 Digitale Teilhabe im Alter · Offenes Seminar · 12.–14. Oktober 2026 · Haus auf der Alb, Bad Urach
 
-![LpB](shared/logos/lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](shared/logos/sii.png) ![Universität Ulm / ZAWiW](shared/logos/uulm-zawiw.png)
+![LpB](lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](sii.png) ![Universität Ulm / ZAWiW](uulm-zawiw.png)
 
 ---
 
@@ -34,7 +34,7 @@ Inhalt folgt.
 
 [simon.lueke.space/slides/dta-2026-10-13](https://simon.lueke.space/slides/dta-2026-10-13/)
 
-![QR-Code](shared/qr-code.svg)
+![QR-Code](qr-code.svg)
 
 Kontakt: [https://simon.lueke.space/](https://simon.lueke.space/)
 

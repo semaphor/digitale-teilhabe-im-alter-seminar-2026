@@ -34,7 +34,7 @@ Siehe [[STRUKTUR]] für die genauen Programmdaten.
 
 ### Quellen und Hintergrund
 
-- [[quellen/IT-Sicherheit von KI-LLMs]] – Quellen zur These *„LLMs sind prinzipiell nicht absicherbar“*
+- [[IT-Sicherheit von LLMs]] – Quellen zur These *„LLMs sind prinzipiell nicht absicherbar“*
 
 ---
 

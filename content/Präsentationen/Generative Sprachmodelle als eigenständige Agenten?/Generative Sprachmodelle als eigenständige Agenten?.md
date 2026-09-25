@@ -1,15 +1,15 @@
 ---
-title: Schritt für Schritt digital unabhängiger
+title: Generative Sprachmodelle als eigenständige Agenten?
 theme: white
 ---
 
-# Schritt für Schritt digital unabhängiger
+# Generative Sprachmodelle als eigenständige Agenten?
 
-**DI.DAY, Technik und politische Hintergründe**
+**Workshop**
 
 Digitale Teilhabe im Alter · Offenes Seminar · 12.–14. Oktober 2026 · Haus auf der Alb, Bad Urach
 
-![LpB](shared/logos/lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](shared/logos/sii.png) ![Universität Ulm / ZAWiW](shared/logos/uulm-zawiw.png)
+![LpB](lpb.png) ![Netzwerk für Senior-Internet-Initiativen Baden-Württemberg](sii.png) ![Universität Ulm / ZAWiW](uulm-zawiw.png)
 
 ---
 
@@ -33,9 +33,9 @@ Inhalt folgt.
 
 [simon.lueke.space/slides/dta-2026-10-13](https://simon.lueke.space/slides/dta-2026-10-13/)
 
-![QR-Code](shared/qr-code.svg)
+![QR-Code](qr-code.svg)
 
-Kontakt: [simon.lueke.space](https://simon.lueke.space/)
+Kontakt: [https://simon.lueke.space/](https://simon.lueke.space/)
 
 ---
 

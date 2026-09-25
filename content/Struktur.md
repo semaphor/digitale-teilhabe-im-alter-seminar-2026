@@ -1,16 +1,16 @@
 Meine Notizen zur Strukturierung des Inhalts
 Siehe auch [[Wilde Materialsammlung]].
 Quellen:
-* [[IT-Sicherheit von KI-LLMs]]
+* [[IT-Sicherheit von LLMs]]
 * [[Digitale Unabhängigkeit (Souveränität)]]
 ## Vorstellung Simon Lüke
 ...
 
-## [[schritt-fuer-schritt-digital-unabhaengiger|Vortrag: Schritt für Schrit digital unabhängiger]]
+## [[Schritt für Schritt digital unabhängiger|Vortrag: Schritt für Schrit digital unabhängiger]]
 ...
 
 
-## [[input-bewerbung-mit-ki-agent|Input: Bewerbungen schreiben mit KI-Agent]]
+## [[Bewerbungen schreiben mit Hilfe eines KI-Agenten|Input: Bewerbungen schreiben mit KI-Agent]]
 
 ### Vorworte, Haltung zu KI und LLM
 
@@ -20,4 +20,4 @@ Quellen:
 * Mitarbeiter
 * Ungläubiger Thomas
 
-## [[workshop-llm-als-agenten|Workshop: LLMs als Agenten?]]
+## [[Generative Sprachmodelle als eigenständige Agenten?|Workshop: LLMs als Agenten?]]
