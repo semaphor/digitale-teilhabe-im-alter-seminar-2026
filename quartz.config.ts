@@ -15,6 +15,10 @@ const config: QuartzConfig = {
       "vortraege/node_modules",
       "vortraege/package.json",
       "vortraege/package-lock.json",
+      // slide-deck sources: built separately with reveal-md and published as
+      // standalone presentations, not as regular wiki pages (see workflow)
+      "vortraege/*/*.md",
+      "vortraege/shared/template.html",
       "private",
       "templates",
       ".obsidian",

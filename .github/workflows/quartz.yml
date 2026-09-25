@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0 # full history so Quartz can read per-page created/modified dates from git
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -34,8 +34,24 @@ jobs:
       - name: Build Quartz site
         run: npx quartz build
 
+      - name: Build reveal.js slide decks
+        working-directory: content/vortraege
+        run: |
+          npm ci
+          npm run build
+          # reveal-md resolves image paths relative to each deck's own folder,
+          # not the invocation cwd, so the shared logos/QR code never get
+          # copied by the build itself - copy them in manually per deck.
+          for deck in _site/*/; do
+            mkdir -p "$deck/shared"
+            cp -r shared/* "$deck/shared/"
+          done
+
+      - name: Publish slide decks into the site
+        run: cp -r content/vortraege/_site/* public/vortraege/
+
       - name: Upload to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -48,4 +64,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
