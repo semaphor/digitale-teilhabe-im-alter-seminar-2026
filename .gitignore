@@ -1,4 +1,10 @@
 node_modules/
 
 # reveal-md build output
-vortraege/_site/
+content/vortraege/_site/
+
+# Quartz
+public/
+.quartz-cache/
+tsconfig.tsbuildinfo
+.DS_Store

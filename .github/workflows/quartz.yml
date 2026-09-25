@@ -3,9 +3,6 @@ name: Deploy Quartz Wiki to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '.github/**'
-      - 'vortraege/_site/**'
 
 permissions:
   contents: read
@@ -17,46 +14,33 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # full history so Quartz can read per-page created/modified dates from git
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-
-      - name: Install unzip
-        run: sudo apt-get update && sudo apt-get install -y unzip
-
-      - name: Download Quartz from GitHub
-        run: |
-          curl -L https://github.com/QuartzWiki/quartz/archive/refs/heads/main.zip -o quartz.zip
-          unzip quartz.zip
-          mv quartz-main quartz
+          node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: |
-          cd quartz
-          npm install
-          cd ..
+        run: npm ci
 
       - name: Build Quartz site
-        run: |
-          cd quartz
-          npx quartz build --output-dir ../_quartz
+        run: npx quartz build
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _quartz/
+          path: public
 
   deploy:
-    needs: build-and-deploy
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
