@@ -42,10 +42,28 @@ eigenständige Agenten?) sowie die begleitende Website.
       tot, keine Weiterleitungsketten)
 - [ ] Alle Wikilinks im Vault lösen auf (keine roten/fehlenden Links, z.B. via
       Quartz-Graph oder Obsidian „Nicht aufgelöste Links" prüfen)
-- [ ] QR-Code und Kontakt-Link zeigen auf die tatsächlich veröffentlichte
-      URL (aktuell referenzieren die Folien `simon.lueke.space/slides/...` –
-      abgleichen, ob das noch die richtige/finale Adresse ist oder ob auf die
-      GitHub-Pages-URL verwiesen werden soll)
+- [ ] Verlinkung auf der Folie „Präsentation und weiteres Material" (QR-Code,
+      Text-Link, Kontakt) zeigt auf die tatsächlich veröffentlichte URL – erst
+      kurz vor dem Seminar final festlegen/prüfen, da noch offen ist, ob
+      GitHub Pages (`semaphor.github.io/...`) oder wieder die eigene
+      Homepage (`simon.lueke.space/...`) genutzt wird
+
+## Geteilte Folien (Bausteine)
+
+Folgende Folien sind identisch in allen drei Präsentationen und werden aktuell
+manuell dupliziert (kein automatischer Include, siehe Notiz weiter unten) –
+vor Veröffentlichung händisch bzw. mit Claude abgleichen. **Führend ist
+„Schritt für Schritt digital unabhängiger"**, die anderen beiden werden
+daran angepasst:
+
+- [ ] „Es geht gleich los..." (Bedienungshinweise)
+- [ ] „Als PDF" (Druckansicht-Links)
+- [ ] „Vielen Dank für Ihre Aufmerksamkeit!"
+- [ ] „Präsentation und weiteres Material" (QR-Code, Link, Kontakt) – hier
+      gibt es bereits eine Abweichung: „Schritt für Schritt" verlinkt den
+      Kontakt-Text als „simon.lueke.space", die anderen beiden als volle URL
+      „https://simon.lueke.space/"
+- [ ] „Rechte"
 
 ## Technisch
 
