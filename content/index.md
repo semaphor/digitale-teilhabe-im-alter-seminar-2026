@@ -1,3 +1,7 @@
+---
+title: Digitale Teilhabe im Alter – Seminar 2026
+---
+
 # Digitale Teilhabe im Alter – Seminar 2026
 
 **Offenes Seminar · 12.–14. Oktober 2026 · Haus auf der Alb, Bad Urach**
