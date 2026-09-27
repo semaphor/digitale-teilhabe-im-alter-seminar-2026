@@ -1,5 +1,5 @@
 Meine Notizen zur Strukturierung des Inhalts
-Siehe auch [[Wilde Materialsammlung]].
+Siehe auch [[Materialsammlung]].
 Quellen:
 * [[IT-Sicherheit von LLMs]]
 * [[Digitale Unabhängigkeit (Souveränität)]]
