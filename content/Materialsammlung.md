@@ -14,3 +14,8 @@ The "whiteboard defense:" I should be able to pull you aside at any moment and a
 
 Reverse Centaur! Wir wollen dass die Maschine für uns arbeitet.
 Denn "die digitale Technologie wäre prädestiniert" TODO suche Keynote von Bits und Bäume, wo Professor ? das sagt.
+
+
+
+https://docs.docker.com/desktop/setup/install/windows-install/
+https://docs.docker.com/guides/mistral-vibe-sandbox/
