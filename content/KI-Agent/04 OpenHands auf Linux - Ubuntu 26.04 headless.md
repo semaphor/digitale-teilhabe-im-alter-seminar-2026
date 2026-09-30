@@ -7,7 +7,7 @@
 | Aspekt | Windows | Ubuntu headless |
 |---|---|---|
 | Docker | Docker Desktop + WSL2-Integration | Docker Engine (native, via apt) |
-| Zugriff auf geteilten Ordner | `\\wsl$\…` im Explorer | SSH/SCP, SFTP, oder Git |
+| Zugriff auf geteilten Ordner | Explorer über `\\wsl$\…` (Windows) bzw. direkt `~/agent` | SSH/SCP, SFTP, oder Git |
 | UI-Erreichbarkeit | `http://localhost:8000` am eigenen Rechner | `ssh -L 8000:localhost:8000` (SSH-Tunnel) |
 | Sicherheit | Loopback-Binding reicht meist | zusätzlich: Firewall, kein Port nach außen |
 
@@ -43,7 +43,7 @@ newgrp docker   # oder aus- und wieder einloggen
 ## Schritt 2: Ordner und API-Key vorbereiten
 
 ```bash
-mkdir -p ~/agent/incoming ~/agent/outgoing ~/openhands-state
+mkdir -p ~/agent/incoming ~/agent/outgoing ~/agent-openhands-state
 ```
 
 API-Key sicher ablegen (nicht im geteilten Ordner, nicht world-readable):
@@ -64,7 +64,7 @@ docker run -d --name openhands \
   -e LLM_API_KEY="$MISTRAL_API_KEY" \
   -e LLM_MODEL="mistral/devstral-medium-2507" \
   -e LLM_BASE_URL="https://api.mistral.ai/v1" \
-  -v ~/openhands-state:/home/openhands/.openhands \
+  -v ~/agent-openhands-state:/home/openhands/.openhands \
   -v ~/agent:/projects \
   -v /var/run/docker.sock:/var/run/docker.sock \
   ghcr.io/openhands/agent-canvas:latest
@@ -104,9 +104,9 @@ Falls die UI beim ersten Start einen lokalen API-Key verlangt:
 docker exec openhands sh -c 'cat "$STATE_DIR/api-key.txt"'
 ```
 
-## Schritt 5: Dateiaustausch ohne `\\wsl$`
+## Schritt 5: Dateiaustausch per SSH/SCP
 
-Der geteilte Ordner liegt jetzt auf dem Server unter `~/agent`. Dorthin kommst du:
+Der geteilte Ordner liegt auf dem Server unter `~/agent` (lokales Verzeichnis, kein Windows-Mount). Dorthin kommst du:
 
 ```bash
 # Datei vom Client auf den Server
@@ -134,7 +134,7 @@ docker pull ghcr.io/openhands/agent-canvas:latest
 docker container prune -f
 ```
 
-Persistenz: Session-State in `~/openhands-state`, Arbeitsdaten in `~/agent` – Container löschen kostet keinen Chatverlauf.
+Persistenz: Session-State in `~/agent-openhands-state`, Arbeitsdaten in `~/agent` – Container löschen kostet keinen Chatverlauf.
 
 ## Typische Fehler und Lösungen (Linux-spezifisch)
 
@@ -144,10 +144,11 @@ Persistenz: Session-State in `~/openhands-state`, Arbeitsdaten in `~/agent` – 
 | UI im Browser des Clients nicht erreichbar | Tunnel fehlt oder falsch: `ssh -L 8000:localhost:8000` muss laufen; Server bindet nur `127.0.0.1` |
 | Sandboxes starten nicht | Socket-Mount fehlt oder AppArmor/Selinux-Profile blockieren – `docker logs openhands` zeigt Details |
 | Agent kann nicht auf `/projects` schreiben | Mount-Ownership: `sudo chown -R $USER: ~/agent` (Sandbox läuft als `SANDBOX_USER_ID=1000`) |
-| Nach Reboot ist alles weg | `--restart unless-stopped` gesetzt? Persistenz-Mounts (`~/openhands-state`, `~/agent`) vorhanden? |
+| Nach Reboot ist alles weg | `--restart unless-stopped` gesetzt? Persistenz-Mounts (`~/agent-openhands-state`, `~/agent`) vorhanden? |
 | Verdacht auf Missbrauch von außen | `ss -tlnp` prüfen: Port 8000 darf nur auf 127.0.0.1 lauschen; UFW-Regeln kontrollieren |
 
 ## Ausblick
 
-- Vergleichbarer Schnelltest ohne OpenHands-Stack: [[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]] (übertragbar auf Linux: identische Befehle, Mount statt `\\wsl$` einfach `~/agent` direkt)
+- Vergleichbarer Schnelltest ohne OpenHands-Stack: [[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]] (unter Linux identische Befehle, der Austauschordner ist einfach `~/agent` direkt)
 - Windows-Variante mit Docker Desktop: [[02 OpenHands auf Windows - Setup und Konfiguration]]
+- Dieselbe Ubuntu-Installation, aber lokal am Laptop statt headless: [[03 OpenHands auf Ubuntu 26.04 - Lokal am Laptop]]

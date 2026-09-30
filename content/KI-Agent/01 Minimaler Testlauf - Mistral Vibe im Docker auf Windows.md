@@ -137,4 +137,5 @@ docker rmi vibe-worker:local
 ## Ausblick
 
 - Mehrere Sessions + Web-UI → [[02 OpenHands auf Windows - Setup und Konfiguration]]
-- Gleicher Stack auf einem headless Linux-Server → [[03 OpenHands auf Linux - Ubuntu 26.04 headless]]
+- OpenHands lokal auf einem Ubuntu-Laptop → [[03 OpenHands auf Ubuntu 26.04 - Lokal am Laptop]]
+- Gleicher Stack headless auf einem Linux-Server → [[04 OpenHands auf Linux - Ubuntu 26.04 headless]]

@@ -55,7 +55,7 @@ Falls Docker bereits läuft, weiter bei Schritt 2.
 
 ```bash
 # Austauschordner (identisch zum Minimal-Testlauf, s. Anleitung 01)
-mkdir -p ~/agent ~/openhands-state
+mkdir -p ~/agent ~/agent-openhands-state
 
 # API-Key als Umgebungsvariable (nicht in Dateien im geteilten Ordner ablegen!)
 export MISTRAL_API_KEY="dein-key"
@@ -80,7 +80,7 @@ docker run -it --rm \
   -e LLM_API_KEY="$MISTRAL_API_KEY" \
   -e LLM_MODEL="mistral/devstral-medium-2507" \
   -e LLM_BASE_URL="https://api.mistral.ai/v1" \
-  -v ~/openhands-state:/home/openhands/.openhands \
+  -v ~/agent-openhands-state:/home/openhands/.openhands \
   -v ~/agent:/projects \
   -v /var/run/docker.sock:/var/run/docker.sock \
   ghcr.io/openhands/agent-canvas:latest
@@ -142,7 +142,7 @@ docker stop <container>
 docker pull ghcr.io/openhands/agent-canvas:latest
 ```
 
-- **Persistenz:** Chatverlauf/Session-State liegt in `~/openhands-state` (Mount), Dateien in `~/agent` – ein Container-Neustart verliert nichts.
+- **Persistenz:** Chatverlauf/Session-State liegt in `~/agent-openhands-state` (Mount), Dateien in `~/agent` – ein Container-Neustart verliert nichts.
 - **Approval-Policy:** In der UI einstellbar; für Autonomie-Runs "HIGH-risk"-Aktionen auf manuelle Bestätigung lassen (Standardeinstellung).
 
 ## Typische Fehler und Lösungen
@@ -159,4 +159,5 @@ docker pull ghcr.io/openhands/agent-canvas:latest
 ## Ausblick
 
 - Schneller Sanity-Check ohne OpenHands: [[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]]
-- Gleicher Stack headless auf Linux: [[03 OpenHands auf Linux - Ubuntu 26.04 headless]]
+- OpenHands lokal auf einem Ubuntu-Laptop → [[03 OpenHands auf Ubuntu 26.04 - Lokal am Laptop]]
+- Gleicher Stack headless auf einem Linux-Server → [[04 OpenHands auf Linux - Ubuntu 26.04 headless]]

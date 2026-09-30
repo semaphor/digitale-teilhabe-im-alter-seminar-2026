@@ -1,6 +1,6 @@
 # Anleitung 00: Mistral-Account anlegen und API-Key erhalten
 
-> Ziel: Einen Mistral-Account anlegen und einen API-Key erzeugen – die Grundlage für alle drei Setup-Anleitungen ([[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]], [[02 OpenHands auf Windows - Setup und Konfiguration]], [[03 OpenHands auf Linux - Ubuntu 26.04 headless]]).
+> Ziel: Einen Mistral-Account anlegen und einen API-Key erzeugen – die Grundlage für alle Setup-Anleitungen ([[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]], [[02 OpenHands auf Windows - Setup und Konfiguration]], [[03 OpenHands auf Ubuntu 26.04 - Lokal am Laptop]], [[04 OpenHands auf Linux - Ubuntu 26.04 headless]]).
 
 ## Schritt 1: Account anlegen
 
@@ -84,4 +84,5 @@ vibe   # startet und fragt ggf. nach dem Key, wenn MISTRAL_API_KEY nicht gesetzt
 Mit funktionierendem Key geht es weiter mit:
 - [[01 Minimaler Testlauf - Mistral Vibe im Docker auf Windows]] – der 30-Minuten-Test
 - [[02 OpenHands auf Windows - Setup und Konfiguration]] – Multi-Session mit Web-UI
-- [[03 OpenHands auf Linux - Ubuntu 26.04 headless]] – Server-Variante
+- [[03 OpenHands auf Ubuntu 26.04 - Lokal am Laptop]] – lokale Ubuntu-Variante
+- [[04 OpenHands auf Linux - Ubuntu 26.04 headless]] – Server-Variante
